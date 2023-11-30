@@ -237,19 +237,25 @@ def parse_arguments():
     if args.cot_trigger_no == 1:
         args.cot_trigger = '''|step|subquestion|process|result|'''
     elif args.cot_trigger_no == 2:
-        args.cot_trigger = "|step|subquestion|procedure|result|"
+        args.cot_trigger = "|logical reasoning process|result|"
     elif args.cot_trigger_no == 3:
-        args.cot_trigger = "|step|subquestion|process|result|"
+        args.cot_trigger = "|deductive reasoning process|result|"
     elif args.cot_trigger_no == 4:
-        args.cot_trigger = "|step|initial state|action|next state|"
+        args.cot_trigger = "|inductive reasoning process|result|"
     elif args.cot_trigger_no == 5:
-        args.cot_trigger = "|step|original answer|action|updated answer|"
+        args.cot_trigger = "|abductive reasoning process|result|"
     elif args.cot_trigger_no == 6:
-        args.cot_trigger = "|step|word|last letter|answer|"
+        args.cot_trigger = "|inferential reasoning process|result|"
     elif args.cot_trigger_no == 7:
-        args.cot_trigger = "|step|original answer|action|updated answer|"
+        args.cot_trigger = "|analogical reasoning process|result|"
     elif args.cot_trigger_no == 8:
-        args.cot_trigger = "|step|initial coin state|flip or not|next coin step|"
+        args.cot_trigger = "|critical reasoning process|result|"
+    elif args.cot_trigger_no == 9:
+        args.cot_trigger = "|counterfactual reasoning process|result|"
+    elif args.cot_trigger_no == 10:
+        args.cot_trigger = "|cause-for-effect reasoning process|result|"
+    elif args.cot_trigger_no == 11:
+        args.cot_trigger = "|creative reasoning process|result|"
     else:
         raise ValueError("cot_trigger_no is not properly defined ...")
     
