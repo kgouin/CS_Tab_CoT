@@ -256,6 +256,10 @@ def parse_arguments():
         args.cot_trigger = "|cause-for-effect reasoning process|result|"
     elif args.cot_trigger_no == 11:
         args.cot_trigger = "|creative reasoning process|result|"
+    elif args.cot_trigger_no == 12:
+        args.cot_trigger = "|illogical reasoning process|result|"
+    elif args.cot_trigger_no == 13:
+        args.cot_trigger = "|delusional reasoning process|result|"
     else:
         raise ValueError("cot_trigger_no is not properly defined ...")
     
